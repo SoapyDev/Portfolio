@@ -1,0 +1,66 @@
+
+:root {
+    --black: #171321;
+    --white: #f7f8fa;
+    --main: #0d314b;
+    --secondary: #4b0d49;
+    --hover: #ff17e4;
+    --action: #e310cb;
+    --emphasis: #86fbfb;
+    --font-size: 1.3rem;
+    --mono: "Oxygen mono", monospace;
+    --sans: "Oxygen", sans-serif;
+  }
+
+  /*! Generic styles*/
+  html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+  }
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+  }
+
+  body {
+    font-family: var(--sans);
+    font-size: var(--font-size);
+    padding: 0;
+    margin: 0;
+    background-color: var(--black);
+    color: var(--white);
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    margin: 0;
+  }
+
+  a {
+    color: var(--action);
+  }
+
+  a:hover {
+    color: var(--hover);
+    text-decoration: none;
+  }
+
+  img {
+    width: 100%;
+  }
+
+.sr-only,
+.sr-only::after,
+.sr-only::before {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+}
